@@ -1,0 +1,17 @@
+html, body, h1, h2, h3, h4, h5, h6, table {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+}
+
+
+.links  {
+    text-decoration: none
+    !important;
+}
+.padding-large {
+    padding-left:50px;
+    padding-right:50px!important;
+}
+.error {
+    color: red!important;
+}
