@@ -9,18 +9,20 @@ define('ROOT', dirname(__FILE__));
 define('APP', dirname(__FILE__).'/app');
 define('VIEWS', APP.'/views');
 
+// default layout
 define('LAYOUT', 'layout/main');
+
+// DB setup
 define('DNS', 'sqlite:base.sqlite');
+
+// display items
 define('SHOW_DEFAULT', 5);
 
 require_once 'core/autoload.php';
 require_once 'core/functions.php';
 
 session_start();
-//session_set_cookie_params(0,'/');
-//$_SESSION = [];
-//unset($_SESSION['error']);
-//debug($_SESSION);
+
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
 /*
