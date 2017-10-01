@@ -13,7 +13,7 @@ define('VIEWS', APP.'/views');
 define('LAYOUT', 'layout/main');
 
 // DB setup
-define('DNS', 'sqlite:base.sqlite');
+define('DNS', 'sqlite:/ vendor/bin/heroku-php-apache2/base.sqlite');
 
 // display items
 define('SHOW_DEFAULT', 5);
