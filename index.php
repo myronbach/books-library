@@ -4,6 +4,7 @@ use core\Router;
 
 
 
+session_start();
 
 define('ROOT', dirname(__FILE__));
 define('APP', dirname(__FILE__).'/app');
@@ -12,8 +13,11 @@ define('VIEWS', APP.'/views');
 // default layout
 define('LAYOUT', 'layout/main');
 
-// DB setup
-define('DNS', 'sqlite:/ vendor/bin/heroku-php-apache2/base.sqlite');
+/* DB setup ---------//
+ * Choose mysql or sqlite database
+ * set up configuration Db in /config/database.php
+ * */
+define('DB', 'mysql');
 
 // display items
 define('SHOW_DEFAULT', 5);
@@ -21,7 +25,6 @@ define('SHOW_DEFAULT', 5);
 require_once 'core/autoload.php';
 require_once 'core/functions.php';
 
-session_start();
 
 
 $query = rtrim($_SERVER['QUERY_STRING'], '/');
