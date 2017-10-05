@@ -1,5 +1,7 @@
 <div class="w3-content w3-section" style="max-width:980px">
 <div class="w3-card-4 " style="margin-top: 50px">
+    <?php include(VIEWS.'/shared/errors.php')?>
+
     <div class="w3-row w3-padding w3-light-gray">
         <h2><?php if(isset($title)){echo $title;}?></h2>
         <div class="w3-third">

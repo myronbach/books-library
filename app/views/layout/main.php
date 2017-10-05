@@ -22,7 +22,6 @@
 </head>
 <body class="w3-light-gray">
 <?php include(VIEWS . '/shared/navbar.php') ?>
-<?php include(VIEWS.'/shared/errors.php')?>
 
 
 

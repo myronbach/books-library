@@ -27,8 +27,6 @@ class Db
             case 'sqlite':
                 $this->dsn = "{$db['driver']}:{$db['database']}";
         }
-        //debug($db);
-        //die();
 
         try{
             $this->pdo = new \PDO($this->dsn, $this->username, $this->password);
@@ -38,6 +36,7 @@ class Db
         }
     }
 
+    // singletone
     public static function instance()
     {
         if(self::$instance === null){
